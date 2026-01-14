@@ -60,7 +60,7 @@ export function CheckoutForm({
       />
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
         <div className="bg-white rounded-xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto">
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-4 flex items-center justify-between rounded-t-xl sticky top-0">
+          <div className="bg-gradient-to-r from-rose-500 to-pink-500 text-white p-4 flex items-center justify-between rounded-t-xl sticky top-0">
             <h2 className="text-xl font-bold">Finalizar Pedido</h2>
             <button
               onClick={onClose}
@@ -73,7 +73,7 @@ export function CheckoutForm({
           <form onSubmit={handleSubmit} className="p-6 space-y-4">
             <div>
               <label className="flex items-center gap-2 text-gray-700 font-semibold mb-2">
-                <User className="w-5 h-5 text-orange-600" />
+                <User className="w-5 h-5 text-rose-600" />
                 Nome completo *
               </label>
               <input
@@ -82,7 +82,7 @@ export function CheckoutForm({
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all"
                 placeholder="Digite seu nome"
                 required
               />
@@ -90,14 +90,14 @@ export function CheckoutForm({
 
             <div>
               <label className="flex items-center gap-2 text-gray-700 font-semibold mb-2">
-                <Phone className="w-5 h-5 text-orange-600" />
+                <Phone className="w-5 h-5 text-rose-600" />
                 Telefone *
               </label>
               <input
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => handlePhoneChange(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all"
                 placeholder="(00) 00000-0000"
                 required
               />
@@ -105,7 +105,7 @@ export function CheckoutForm({
 
             <div>
               <label className="flex items-center gap-2 text-gray-700 font-semibold mb-2">
-                <CreditCard className="w-5 h-5 text-orange-600" />
+                <CreditCard className="w-5 h-5 text-rose-600" />
                 Forma de Pagamento *
               </label>
               <select
@@ -113,7 +113,7 @@ export function CheckoutForm({
                 onChange={(e) =>
                   setFormData({ ...formData, paymentMethod: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all bg-white"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all bg-white"
                 required
               >
                 <option value="">Selecione a forma de pagamento</option>
@@ -126,7 +126,7 @@ export function CheckoutForm({
 
             <div>
               <label className="flex items-center gap-2 text-gray-700 font-semibold mb-2">
-                <FileText className="w-5 h-5 text-orange-600" />
+                <FileText className="w-5 h-5 text-rose-600" />
                 Observações
               </label>
               <textarea
@@ -134,15 +134,15 @@ export function CheckoutForm({
                 onChange={(e) =>
                   setFormData({ ...formData, notes: e.target.value })
                 }
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition-all resize-none"
-                placeholder="Ex: Sem cebola, ponto da carne, endereço de entrega..."
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-rose-500 focus:border-transparent outline-none transition-all resize-none"
+                placeholder="Ex: Tamanho preferido, gravação especial, data desejada..."
                 rows={4}
               />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-xl"
+              className="w-full bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-700 hover:to-pink-700 text-white py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-lg hover:shadow-xl"
             >
               <Send className="w-5 h-5" />
               Enviar Pedido via WhatsApp

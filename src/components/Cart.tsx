@@ -30,7 +30,7 @@ export function Cart({
         onClick={onClose}
       />
       <div className="fixed right-0 top-0 h-full w-full sm:w-96 bg-white shadow-2xl z-50 flex flex-col">
-        <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-4 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-rose-500 to-pink-500 text-white p-4 flex items-center justify-between">
           <h2 className="text-xl font-bold flex items-center gap-2">
             <ShoppingBag className="w-6 h-6" />
             Seu Carrinho
@@ -69,7 +69,7 @@ export function Cart({
                       <h3 className="font-semibold text-gray-800">
                         {item.product.name}
                       </h3>
-                      <p className="text-sm text-orange-600 font-bold mt-1">
+                      <p className="text-sm text-rose-600 font-bold mt-1">
                         {formatCurrency(item.product.price)}
                       </p>
                       <div className="flex items-center gap-2 mt-2">
@@ -88,7 +88,7 @@ export function Cart({
                           onClick={() =>
                             onUpdateQuantity(item.product.id, item.quantity + 1)
                           }
-                          className="w-7 h-7 bg-orange-600 hover:bg-orange-700 text-white rounded flex items-center justify-center transition-colors"
+                          className="w-7 h-7 bg-rose-600 hover:bg-rose-700 text-white rounded flex items-center justify-center transition-colors"
                         >
                           <Plus className="w-4 h-4" />
                         </button>
@@ -114,13 +114,13 @@ export function Cart({
             <div className="border-t border-gray-200 p-4 bg-gray-50">
               <div className="flex justify-between items-center mb-4">
                 <span className="text-lg font-semibold text-gray-700">Total:</span>
-                <span className="text-2xl font-bold text-orange-600">
+                <span className="text-2xl font-bold text-rose-600">
                   {formatCurrency(total)}
                 </span>
               </div>
               <button
                 onClick={onCheckout}
-                className="w-full bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white py-3 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl"
+                className="w-full bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white py-3 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl"
               >
                 Finalizar Pedido
               </button>
