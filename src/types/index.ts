@@ -4,7 +4,7 @@ export interface Product {
   description: string;
   price: number;
   image: string;
-  category: 'ring' | 'necklace' | 'earring';
+  category: 'burger' | 'drink' | 'side';
 }
 
 export interface CartItem {

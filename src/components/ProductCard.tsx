@@ -24,12 +24,12 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
           {product.description}
         </p>
         <div className="flex items-center justify-between">
-          <span className="text-2xl font-bold text-rose-600">
+          <span className="text-2xl font-bold text-orange-600">
             {formatCurrency(product.price)}
           </span>
           <button
             onClick={() => onAddToCart(product)}
-            className="bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2 transition-colors shadow-md hover:shadow-lg"
+            className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg font-semibold flex items-center gap-2 transition-colors shadow-md hover:shadow-lg"
           >
             <Plus className="w-4 h-4" />
             <span>Adicionar</span>
